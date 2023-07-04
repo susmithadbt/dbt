@@ -6,5 +6,5 @@ sources:
     schema: PUBLIC 
     tables:
       - name: orders
-      - name: customer
+      - name: CUSTOMER
       - name: payments
