@@ -5,6 +5,6 @@ sources:
     database: DBT_DATABASE  
     schema: PUBLIC 
     tables:
-      - name: orders
+      - name: ORDERS
       - name: CUSTOMER
-      - name: payments
+      - name: PAYMENTS
