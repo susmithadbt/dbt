@@ -2,8 +2,6 @@
 version: 2
 
 models:
-  
-
     - name: my_first_dbt_model
       description: "A starter dbt model"
       columns:
@@ -21,6 +19,4 @@ models:
             tests:
                 - unique
                 - not_null
-    
-    - name:  customer
     
