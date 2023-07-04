@@ -1,10 +1,6 @@
-{{ config(materialized='table') }}
-
-with source_data as (
-
- select * from DBT_DATABASE.PUBLIC.ORDERS
-
+with source_data AS
+(
+select * from {{ source('analysis', 'ORDERS') }}
 )
 
-select *
-from ORDERS
+select * from ORDERS
