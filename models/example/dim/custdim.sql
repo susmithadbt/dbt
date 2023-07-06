@@ -5,7 +5,7 @@ with customers as (
         first_name,
         last_name
 
-    from {{ ref('stg_customer')}}
+    from {{ ref('stg_custdata')}}
 
 ),
 
@@ -17,7 +17,7 @@ orders as (
         order_date,
         status
 
-    from {{ ref('stg_order')}}
+    from {{ ref('stg_orderdata')}}
 
 ),
 
