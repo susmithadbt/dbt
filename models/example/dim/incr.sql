@@ -1,0 +1,9 @@
+{{ config(
+    materialized = 'incremental'
+) }}
+      with orders as(
+      select * from {{ref(stg_orderdata)}}
+      {% if is_incremental()%}
+      where order_date >=(select max(order_date)from {{this}})
+      {%endif%}
+)
