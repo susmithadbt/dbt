@@ -2,13 +2,11 @@ version: 2
 
 sources:
   - name: analysis
-    database: DBT_DATABASE  
-    schema: PUBLIC 
+    database: DBT_DATABASE
+    schema: PUBLIC
     tables:
       - name: ORDERS
       - name: CUSTOMER
       - name: PAYMENTS
 
       - name: mock_orders
-      
-      
