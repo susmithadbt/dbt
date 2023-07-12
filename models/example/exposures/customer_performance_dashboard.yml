@@ -1,0 +1,18 @@
+version: 2
+exposures:
+    
+  - name:  weekly_customer_report
+    type: dashboard
+    maturity: high
+    url: https://bi.tool/dashboards/1
+    description: >
+      This is customer report.
+
+    depends_on:
+      - ref('fact_table')
+      - ref('incr')
+      
+
+    owner:
+      name: praneetha
+      email: snowflaketraining01@gmail.com
